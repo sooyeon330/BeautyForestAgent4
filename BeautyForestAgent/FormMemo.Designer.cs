@@ -42,7 +42,7 @@
             this.btnSaveFile = new System.Windows.Forms.Button();
             this.btnSaveFileSelect = new System.Windows.Forms.Button();
             this.txtSaveText = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtLoadText = new System.Windows.Forms.TextBox();
             this.Status.SuspendLayout();
             this.tabMode.SuspendLayout();
             this.tab1.SuspendLayout();
@@ -73,7 +73,7 @@
             // 
             // tab1
             // 
-            this.tab1.Controls.Add(this.textBox4);
+            this.tab1.Controls.Add(this.txtLoadText);
             this.tab1.Controls.Add(this.btnLoadFile);
             this.tab1.Controls.Add(this.btnLoadFileSelect);
             this.tab1.Controls.Add(this.txtLoadFile);
@@ -130,6 +130,7 @@
             this.btnLoadFileSelect.TabIndex = 1;
             this.btnLoadFileSelect.Text = "파일 선택";
             this.btnLoadFileSelect.UseVisualStyleBackColor = true;
+            this.btnLoadFileSelect.Click += new System.EventHandler(this.BtnLoadFileSelect_Click);
             // 
             // btnLoadFile
             // 
@@ -139,6 +140,7 @@
             this.btnLoadFile.TabIndex = 2;
             this.btnLoadFile.Text = "불러오기";
             this.btnLoadFile.UseVisualStyleBackColor = true;
+            this.btnLoadFile.Click += new System.EventHandler(this.BtnLoadFile_Click);
             // 
             // txtSaveFile
             // 
@@ -156,6 +158,7 @@
             this.btnSaveFile.TabIndex = 1;
             this.btnSaveFile.Text = "저장하기";
             this.btnSaveFile.UseVisualStyleBackColor = true;
+            this.btnSaveFile.Click += new System.EventHandler(this.BtnSaveFile_Click);
             // 
             // btnSaveFileSelect
             // 
@@ -165,6 +168,7 @@
             this.btnSaveFileSelect.TabIndex = 2;
             this.btnSaveFileSelect.Text = "파일 선택";
             this.btnSaveFileSelect.UseVisualStyleBackColor = true;
+            this.btnSaveFileSelect.Click += new System.EventHandler(this.BtnSaveFileSelect_Click);
             // 
             // txtSaveText
             // 
@@ -175,15 +179,15 @@
             this.txtSaveText.Size = new System.Drawing.Size(359, 252);
             this.txtSaveText.TabIndex = 3;
             // 
-            // textBox4
+            // txtLoadText
             // 
-            this.textBox4.Location = new System.Drawing.Point(6, 32);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBox4.Size = new System.Drawing.Size(364, 255);
-            this.textBox4.TabIndex = 3;
+            this.txtLoadText.Location = new System.Drawing.Point(6, 32);
+            this.txtLoadText.Multiline = true;
+            this.txtLoadText.Name = "txtLoadText";
+            this.txtLoadText.ReadOnly = true;
+            this.txtLoadText.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.txtLoadText.Size = new System.Drawing.Size(364, 255);
+            this.txtLoadText.TabIndex = 3;
             // 
             // FormMemo
             // 
@@ -213,7 +217,7 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.TabControl tabMode;
         private System.Windows.Forms.TabPage tab1;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtLoadText;
         private System.Windows.Forms.Button btnLoadFile;
         private System.Windows.Forms.Button btnLoadFileSelect;
         private System.Windows.Forms.TextBox txtLoadFile;
