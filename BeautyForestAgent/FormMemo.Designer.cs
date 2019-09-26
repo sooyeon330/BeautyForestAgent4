@@ -118,6 +118,7 @@
             // 
             this.txtLoadFile.Location = new System.Drawing.Point(7, 4);
             this.txtLoadFile.Name = "txtLoadFile";
+            this.txtLoadFile.ReadOnly = true;
             this.txtLoadFile.Size = new System.Drawing.Size(200, 21);
             this.txtLoadFile.TabIndex = 0;
             // 
@@ -143,6 +144,7 @@
             // 
             this.txtSaveFile.Location = new System.Drawing.Point(7, 7);
             this.txtSaveFile.Name = "txtSaveFile";
+            this.txtSaveFile.ReadOnly = true;
             this.txtSaveFile.Size = new System.Drawing.Size(199, 21);
             this.txtSaveFile.TabIndex = 0;
             // 
